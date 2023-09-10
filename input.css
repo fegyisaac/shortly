@@ -2,4 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+.container {
+  @apply w-[330px] m-auto ;
+}
+
+.card {
+  @apply bg-white w-[295px] mt-[100px] h-[220px] relative m-auto rounded-md px-1 pt-[80px];
+}
+
+.card_title {
+  @apply text-DViolet_600 text-xl font-bold pb-2;
+}
+
+.card_text {
+  @apply text-Gray_60 text-[14px] leading-[20px] w-[260px] m-auto;
+}
+
+.card_absolute_img {
+  @apply bg-DViolet_600 w-[80px] h-[80px] absolute -top-7 -translate-x-2/4 left-2/4 rounded-full flex justify-center items-center;
+}
+
+
+/* absolute -top-5 -translate-x-2/4 left-2/4 before:block before:bg-DViolet_600 before:w-8 before:h-8 */

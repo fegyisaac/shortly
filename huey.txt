@@ -23,11 +23,11 @@
     Dark Blue: hsl(255, 11%, 22%)
     Dark Violet: hsl(260, 8%, 14%)
 
-  Features
-  Pricing
-  Resources
+  
+  
+  
 
-  Login
+  
   Sign Up
 
   More than just shorter links
