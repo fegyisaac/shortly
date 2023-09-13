@@ -8,8 +8,10 @@
   @apply w-[330px] m-auto ;
 }
 
+
+
 .card {
-  @apply bg-white w-[295px] mt-[100px] h-[220px] relative m-auto rounded-md px-1 pt-[80px];
+  @apply bg-white w-[295px] mt-[80px] h-[220px] relative m-auto rounded-md px-1 pt-[80px];
 }
 
 .card_title {
@@ -24,5 +26,28 @@
   @apply bg-DViolet_600 w-[80px] h-[80px] absolute -top-7 -translate-x-2/4 left-2/4 rounded-full flex justify-center items-center;
 }
 
+.flex_center {
+  @apply flex justify-center items-center flex-col;
+}
 
-/* absolute -top-5 -translate-x-2/4 left-2/4 before:block before:bg-DViolet_600 before:w-8 before:h-8 */
+.flex_btw {
+  @apply flex justify-between items-center;
+}
+
+.button {
+  @apply font-semibold rounded-3xl p-2 mt-4 bg-Primary hover:bg-Primary_10
+}
+
+.footer_h3 {
+  @apply text-white font-bold text-[16px] pb-[15px];
+}
+
+.footer_ul {
+  @apply flex_center flex-col pb-6 gap-[6px] cursor-pointer;
+}
+
+.footer_ul_li {
+  @apply text-Gray_40 text-[15px] font-semibold hover:text-Primary;
+}
+
+

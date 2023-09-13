@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       colors: {
         Primary: "hsl(180, 66%, 49%)",
+        Primary_10: "hsl(180, 74%, 64%)",
         DViolet_600: "hsl(257, 27%, 26%)",
         Secondary: "hsl(0, 87%, 67%)",
         Gray_10: "hsl(0, 0%, 89%)",
