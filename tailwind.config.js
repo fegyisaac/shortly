@@ -3,12 +3,12 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     screens: {
-
-      "xs": "375px",
-      "sm": "480px",
-      "md": "640px",
-      "lg": "1024px",
-      "xl": "1280px",
+      xs: "375px",
+      sm: "480px",
+      md: "640px",
+      lgmd: "920px",
+      lg: "1024px",
+      xl: "1280px",
       "2xl": "1536px",
     },
 
@@ -28,6 +28,11 @@ module.exports = {
         DBlue_900: "hsl(255, 11%, 22%)",
         DViolet_900: "hsl(260, 8%, 14%)",
       },
+      gridTemplateColumns: {
+        // "15": "repeat(5, minmax(1fr, max-content))",
+        "footer": "350px minmax(180px, 1fr) minmax(180px, 1fr) 1fr",
+      }
+
     },
   },
   plugins: [],

@@ -4,11 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 
+
 .container {
-  @apply w-[330px] m-auto ;
+  @apply w-[330px] xs:w-[85vw] md:w-[87vw] xl:w-[1112px] m-auto;
 }
-
-
 
 .card {
   @apply bg-white w-[295px] mt-[80px] h-[220px] relative m-auto rounded-md px-1 pt-[80px];
@@ -43,7 +42,7 @@
 }
 
 .footer_ul {
-  @apply flex_center flex-col pb-6 gap-[6px] cursor-pointer;
+  @apply flex_center flex-col sm:items-start pb-6 gap-[6px] cursor-pointer;
 }
 
 .footer_ul_li {
