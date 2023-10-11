@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./css/main.css">
     <title>Shortly</title>
 </head>
@@ -17,10 +16,13 @@
         <nav class="flex_btw gap-7">
             <img src="./images/logo.svg" alt="Shorly_logo" class="w-[85px] cursor-pointer">
 
-            <i class="fa-solid fa-bars"></i>
+            <span class="text-3xl md:hidden block cursor-pointer">
+                <ion-icon name="menu-sharp" onclick="menu(this)"></ion-icon>
+                <!-- <ion-icon name="close-sharp"></ion-icon> -->
+            </span>
 
-            <div
-                class="hidden absolute -translate-x-2/4 left-2/4  bg-DViolet_600 list-none w-[280px] text-white text-center text-[15px] p-5 rounded-lg top-[65px] z-20 md:hidden">
+            <div id="menu-icon"
+                class="absolute -translate-x-2/4 left-2/4  bg-DViolet_600 list-none w-[280px] text-white text-center text-[15px] p-5 rounded-lg top-[65px] z-20 md:hidden">
                 <li class="py-2 font-semibold">
                     <a href="#" class="hover:text-Gray_40">Features</a>
                 </li>
@@ -63,10 +65,10 @@
             </div>
         </nav>
     </header>
-    <!-- sm:w-full -->
+
     <!-- HERO SECTION -->
     <div class="container pt-4 pb-[120px] lgmd:flex justify-between items-center flex-row-reverse gap-5">
-        <div class="w-[530px] lgmd:flex-1 lgmd:-right-80 pb-4 lgmd:w-[1000px]">
+        <div class="w-[530px] m-auto lgmd:flex-1 lgmd:-right-80 pb-4 lgmd:w-[1000px]">
             <img src="./images/illustration-working.svg" alt="illustration-working"
                 class="w-full m-auto lgmd:w-[800px]">
         </div>
@@ -87,35 +89,27 @@
     <div class="bg-Gray_10 relative">
         <div
             class="container bg-DViolet_600 absolute -translate-x-2/4 left-2/4 w-[280px] rounded-lg -top-11 py-6 px-10 flex_btw flex-col gap-3 md:flex-row md:gap-5">
-            <input type="text" name="text" placeholder="Shorten a link here.." id="searchValue"
+
+            <input type="text" name="text" placeholder="Shorten a link here.." id="input-value"
                 class="rounded-md px-3 py-2 outline-0 w-full md:flex-1">
-            <button class="bg-Primary hover:bg-Primary_10 rounded-md px-5 py-2 cursor-pointer text-white w-full md:w-fit">Shorten
+                <!-- inputVal -->
+
+            <button id="shortenBtn" class="bg-Primary hover:bg-Primary_10 rounded-md px-5 py-2 cursor-pointer text-white w-full md:w-fit">Shorten
                 it!</button>
+                <!-- shortenBtn : shorten it button -->
         </div>
+
         <div class="w-full pt-24 pb-16 relative">
-            <div class="container rounded-lg m-auto hidden">
+            <div class="container rounded-lg m-auto">
                 <div class="bg-white my-4 rounded-md px-6 py-4 flex_btw">
-                    <p class="text-DViolet_900"><span>httvp.//ww,.dfnfonvfvkdlfn,.sf</span></p>
+                    <p id="codedUrlLink" class="text-DViolet_900"><span><span></p>
+                        <!-- codedUrlLink for d utube -->
                     <div>
-                        <a href="#" class="text-Primary"><span>www.youtube.com</span></a>
+                        <a href="#" class="text-Primary" id="shortenedUrlLink"><span>sho.rtly/we3/234f</span></a>
+                        <!-- shortenedUrlLink = sho.rtly -->
                         <button
-                            class="bg-Primary text-white px-4 ml-4 py-1 hover:bg-Primary_10 active:bg-DViolet_600 rounded-md">Copy</button>
-                    </div>
-                </div>
-                <div class="bg-white my-4 rounded-md px-6 py-4 flex_btw">
-                    <p class="text-DViolet_900"><span>httvp.//ww,.dfnfonvfvkdlfn,.sf</span></p>
-                    <div>
-                        <a href="#" class="text-Primary"><span>www.youtube.com</span></a>
-                        <button
-                            class="bg-Primary text-white px-4 ml-4 py-1 hover:bg-Primary_10 active:bg-DViolet_600 rounded-md">Copy</button>
-                    </div>
-                </div>
-                <div class="bg-white my-4 rounded-md px-6 py-4 flex_btw">
-                    <p class="text-DViolet_900"><span>httvp.//ww,.dfnfonvfvkdlfn,.sf</span></p>
-                    <div>
-                        <a href="#" class="text-Primary"><span>www.youtube.com</span></a>
-                        <button
-                            class="bg-Primary text-white px-4 ml-4 py-1 hover:bg-Primary_10 active:bg-DViolet_600 rounded-md">Copy</button>
+                            class="bg-Primary text-white px-4 ml-4 py-1 hover:bg-Primary_10 active:bg-DViolet_600 rounded-md" id="copyBtn">Copy</button>  
+                            <!-- /* copyBtn */ -->
                     </div>
                 </div>
             </div>
@@ -185,8 +179,8 @@
     <div class="bg-DViolet_600 relative overflow-y-hidden text-center -z-10 flex_center py-11">
         <img src="./images/bg-boost-mobile.svg" class="absolute top-0 h-full w-full -z-20 md:hidden">
         <img src="./images/bg-boost-desktop.svg" class="absolute top-0 h-full w-full -z-20 hidden md:block">
-        <h1 class="text-white font-bold text-[28px]">Boost your links today</h1>
-        <button class="w-[170px] button z-50">
+        <h1 class="text-white font-bold text-[28px] mb-3">Boost your links today</h1>
+        <button class="w-[170px] z-50 font-semibold rounded-3xl p-2 bg-Primary hover:bg-Primary_10">
             <a href="#" class="text-white w-[100px] text-[18px]">Get Started</a>
         </button>
     </div>

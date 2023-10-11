@@ -5,32 +5,22 @@
 </head>
 <body>
 
-
-  <div class="absolute -translate-x-2/4 left-2/4 w-[280px] rounded-lg">
-            <div class="relative">
-                <!-- ABSOLUTE "SHORTEN IT!" SECTION -->
-                <div class="bg-DViolet_600 absolute rounded-lg">
-                    <div class="relative">
-                        <img src="./images/bg-shorten-mobile.svg" class="absolute right-0 rounded-xl -z-0">
-                        <div class="flex_center p-5">
-                            lorem*30
-                            <button class="w-full rounded-lg button">
-                                <a href="#" class="text-white w-[100px]">Shorten It!</a>
-                            </button>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in accusantium illum
-                                ducimus aliquid, nam aut ea id est quod nesciunt necessitatibus atque quisquam! Eius
-                                magnam
-                                aut praesentium adipisci reiciendis!
-                                Doloribus dolore dicta veritatis asperiores sit molestias adipisci molestiae sapiente
-                                eveniet voluptas debitis similique officiis laborum excepturi, aliquid commodi esse
-                                maxime
-                                rerum deleniti quam earum obcaecati laudantium nostrum itaque. Nesciunt?
-                            </p>
-                        </div>
+                <div class="bg-white my-4 rounded-md px-6 py-4 flex_btw">
+                    <p class="text-DViolet_900"><span>httvp.//ww,.dfnfonvfvkdlfn,.sf</span></p>
+                    <div>
+                        <a href="#" class="text-Primary"><span>www.youtube.com</span></a>
+                        <button
+                            class="bg-Primary text-white px-4 ml-4 py-1 hover:bg-Primary_10 active:bg-DViolet_600 rounded-md">Copy</button>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="bg-white my-4 rounded-md px-6 py-4 flex_btw">
+                    <p class="text-DViolet_900"><span>httvp.//ww,.dfnfonvfvkdlfn,.sf</span></p>
+                    <div>
+                        <a href="#" class="text-Primary"><span>www.youtube.com</span></a>
+                        <button
+                            class="bg-Primary text-white px-4 ml-4 py-1 hover:bg-Primary_10 active:bg-DViolet_600 rounded-md">Copy</button>
+                    </div>
+                </div>
 
 
   <div class="attribution">

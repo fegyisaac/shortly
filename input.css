@@ -34,7 +34,7 @@
 }
 
 .button {
-  @apply font-semibold rounded-3xl p-2 bg-Primary hover:bg-Primary_10
+  @apply font-semibold rounded-3xl p-2 bg-Primary hover:bg-Primary_10;
 }
 
 .footer_h3 {
@@ -48,5 +48,4 @@
 .footer_ul_li {
   @apply text-Gray_40 text-[15px] font-semibold hover:text-Primary;
 }
-
 
